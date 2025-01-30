@@ -6,6 +6,7 @@ import DetailsPropertyListSkleton from "../components/commons/DetailsPropertyLis
 import DetailsPropertyPhotoSkleton from "../components/commons/DetailsPropertyPhotoSkleton";
 import DetailsPropertyAmenityLandMarkSkleton from "../components/commons/DetailsPropertyAmenityLandMarkSkleton";
 import DetailsPropertyGuestHouseVariantSkleton from "../components/commons/DetailsPropertyGuestHouseVariantSkleton";
+import BASE_URL from "../config";
 
 function PropertyDetails() {
 
@@ -315,7 +316,7 @@ function PropertyDetails() {
                                                     loading="lazy"
                                                     onLoad={handleImageLoad}
                                                     className="bd-placeholder-img figure-img img-fluid rounded card-img"
-                                                    src={`http://localhost:8000/api/v1/property-image/${img.image_url}`}
+                                                    src={`${BASE_URL}/api/v1/property-image/${img.image_url}`}
                                                     alt="..."
 
                                                 />

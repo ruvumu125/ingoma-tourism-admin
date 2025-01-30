@@ -194,6 +194,8 @@ function RoomAdd() {
                 setSavingErrors({});
                 setIsSaving(false);
 
+                navigate(`/rooms`);
+
                 // Toast
                 toast.success("Enregistré avec succès", {
                     position: "top-right",
@@ -266,7 +268,21 @@ function RoomAdd() {
                                     <div className="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-controls="collapseOne">
                                         <div className="addproduct-icon">
                                             <h5><i data-feather="info" className="add-info"></i><span>Informations sur la chambre</span></h5>
-                                            <a href="javascript:void(0);"><i data-feather="chevron-down" className="chevron-down-add"></i></a>
+                                            <a>
+                                                <svg
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    width="24"
+                                                    height="24"
+                                                    viewBox="0 0 24 24"
+                                                    fill="none"
+                                                    stroke="currentColor"
+                                                    strokeWidth="2"
+                                                    strokeLinecap="round"
+                                                    strokeLinejoin="round"
+                                                    className="feather feather-chevron-down chevron-down-add">
+                                                    <polyline points="6 9 12 15 18 9"></polyline>
+                                                </svg>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -400,7 +416,21 @@ function RoomAdd() {
                                         <div className="text-editor add-list">
                                             <div className="addproduct-icon list icon">
                                                 <h5><i data-feather="life-buoy" className="add-info"></i><span>Commodités de la pièce</span></h5>
-                                                <a href="javascript:void(0);"><i data-feather="chevron-down" className="chevron-down-add"></i></a>
+                                                <a>
+                                                    <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        width="24"
+                                                        height="24"
+                                                        viewBox="0 0 24 24"
+                                                        fill="none"
+                                                        stroke="currentColor"
+                                                        strokeWidth="2"
+                                                        strokeLinecap="round"
+                                                        strokeLinejoin="round"
+                                                        className="feather feather-chevron-down chevron-down-add">
+                                                        <polyline points="6 9 12 15 18 9"></polyline>
+                                                    </svg>
+                                                </a>
                                             </div>
                                         </div>
                                     </div>
@@ -514,7 +544,21 @@ function RoomAdd() {
                                                 <div className="text-editor add-list">
                                                     <div className="addproduct-icon list">
                                                         <h5><i data-feather="list" className="add-info"></i><span>Plans tarifaires de la pièce </span></h5>
-                                                        <a href="javascript:void(0);"><i data-feather="chevron-down" className="chevron-down-add"></i></a>
+                                                        <a>
+                                                            <svg
+                                                                xmlns="http://www.w3.org/2000/svg"
+                                                                width="24"
+                                                                height="24"
+                                                                viewBox="0 0 24 24"
+                                                                fill="none"
+                                                                stroke="currentColor"
+                                                                strokeWidth="2"
+                                                                strokeLinecap="round"
+                                                                strokeLinejoin="round"
+                                                                className="feather feather-chevron-down chevron-down-add">
+                                                                <polyline points="6 9 12 15 18 9"></polyline>
+                                                            </svg>
+                                                        </a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -609,7 +653,21 @@ function RoomAdd() {
                                     <div className="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-controls="collapseSix">
                                         <div className="addproduct-icon list">
                                             <h5><i data-feather="image" className="add-info"></i><span>Images</span></h5>
-                                            <a href="javascript:void(0);"><i data-feather="chevron-down" className="chevron-down-add"></i></a>
+                                            <a>
+                                                <svg
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    width="24"
+                                                    height="24"
+                                                    viewBox="0 0 24 24"
+                                                    fill="none"
+                                                    stroke="currentColor"
+                                                    strokeWidth="2"
+                                                    strokeLinecap="round"
+                                                    strokeLinejoin="round"
+                                                    className="feather feather-chevron-down chevron-down-add">
+                                                    <polyline points="6 9 12 15 18 9"></polyline>
+                                                </svg>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -626,7 +684,21 @@ function RoomAdd() {
                                                                     <div className="image-upload">
                                                                         <input type="file" accept="image/*" onChange={handleImageChange}/>
                                                                         <div className="image-uploads">
-                                                                            <i data-feather="plus-circle" className="plus-down-add me-0"></i>
+                                                                            <svg
+                                                                                xmlns="http://www.w3.org/2000/svg"
+                                                                                width="24"
+                                                                                height="24"
+                                                                                viewBox="0 0 24 24"
+                                                                                fill="none"
+                                                                                stroke="currentColor"
+                                                                                strokeWidth="2"
+                                                                                strokeLinecap="round"
+                                                                                strokeLinejoin="round"
+                                                                                className="feather feather-plus-circle plus-down-add me-0">
+                                                                                <circle cx="12" cy="12" r="10"></circle>
+                                                                                <line x1="12" y1="8" x2="12" y2="16"></line>
+                                                                                <line x1="8" y1="12" x2="16" y2="12"></line>
+                                                                            </svg>
                                                                             <h4>Add Images</h4>
                                                                         </div>
                                                                     </div>

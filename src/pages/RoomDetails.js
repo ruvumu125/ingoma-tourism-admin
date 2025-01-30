@@ -6,6 +6,7 @@ import DetailsPropertyAmenityLandMarkSkleton from "../components/commons/Details
 import DetailsPropertyGuestHouseVariantSkleton from "../components/commons/DetailsPropertyGuestHouseVariantSkleton";
 import DetailsPropertyPhotoSkleton from "../components/commons/DetailsPropertyPhotoSkleton";
 import {getRoomDetails} from "../utils/apiFunctions/roomApiFunctions";
+import BASE_URL from "../config";
 
 function RoomDetails(props) {
 
@@ -244,7 +245,7 @@ function RoomDetails(props) {
                                                     loading="lazy"
                                                     onLoad={handleImageLoad}
                                                     className="bd-placeholder-img figure-img img-fluid rounded card-img"
-                                                    src={`http://localhost:8000/api/v1/room-image/${img.image_url}`}
+                                                    src={`${BASE_URL}/api/v1/room-image/${img.image_url}`}
                                                     alt="..."
 
                                                 />
